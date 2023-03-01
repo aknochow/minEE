@@ -26,7 +26,7 @@ RUN rm -rf $(python3 -m pip cache dir)
 RUN useradd runner
 RUN echo -e "runner:1:999\nrunner:1001:64535" >> /etc/subuid
 RUN echo -e "runner:1:999\nrunner:1001:64535" >> /etc/subgid
-RUN install -d -m 0775 -o runner -g root /home/runner/.ansible /runner /work
+RUN install -d -m 0775 -o runner -g root /home/runner/.ansible /runner /runner/artifacts /runner/env /runner/inventory /runner/project /work
 COPY bashrc bashrc
 RUN install -m 775 -o runner -g root bashrc /home/runner/.bashrc && rm bashrc
 RUN install -m 775 -o runner -g root /dev/null /home/runner/.ansible/galaxy_token
