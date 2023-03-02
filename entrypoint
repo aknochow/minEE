@@ -35,7 +35,11 @@ else
   set -e
 fi
 
+# Set node name for bash prompt
 export CONTAINER_ID=$(uname -n)
+# Optionally Stage (clone) github repositories on launch
+if [ "$STAGEREPO" != "" ] && [ "$STAGEBRANCH" != "" ] ; then git clone -b $STAGEBRANCH https://github.com/$STAGEREPO /stage/ ; fi
+if [ "$STAGEREPO" != "" ] && [ "$STAGEBRANCH" == "" ] ; then git clone https://github.com/$STAGEREPO /stage/ ; fi
 
 # current user might not exist in /etc/passwd at all
 # podman implicit when passing custom uid on macos :>
