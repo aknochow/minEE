@@ -1,5 +1,5 @@
 # minEE (minimal Execution Environment)
-# Fedora 37 flavor
+# Fedora 37 flavor (f37)
 ARG EE_BASE_IMAGE=quay.io/fedora/fedora-minimal:37
 FROM $EE_BASE_IMAGE
 

@@ -1,10 +1,10 @@
 # minEE (minimal Execution Environment)
-# Red Hat 9 flavor (ubi9)
-ARG EE_BASE_IMAGE=registry.access.redhat.com/ubi9-minimal
+# CentOS Stream 9 flavor
+ARG EE_BASE_IMAGE=quay.io/centos/centos:stream9-minimal
 FROM $EE_BASE_IMAGE
 
 # https://github.com/opencontainers/image-spec/blob/main/annotations.md
-LABEL org.opencontainers.image.source https://github.com/aknochow/minee/ubi9/Dockerfile
+LABEL org.opencontainers.image.source https://github.com/aknochow/minee/cs9/Containerfile
 
 # dnf basics
 USER root
