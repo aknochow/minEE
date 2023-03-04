@@ -12,7 +12,8 @@ RUN microdnf -y update && microdnf -y upgrade
 RUN microdnf -y install \
 git-core \
 jq \
-python 
+python \
+which
 RUN microdnf clean all
 
 # Avoid "fatal: detected dubious ownership in repository at" with newer git versions
