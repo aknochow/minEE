@@ -1,1 +1,0 @@
-# minEE - minimal Execution Environment
