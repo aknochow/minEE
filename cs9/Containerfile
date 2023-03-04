@@ -4,7 +4,7 @@ ARG EE_BASE_IMAGE=quay.io/centos/centos:stream9-minimal
 FROM $EE_BASE_IMAGE
 
 # https://github.com/opencontainers/image-spec/blob/main/annotations.md
-LABEL org.opencontainers.image.source https://github.com/aknochow/minee/cs9/Dockerfile
+LABEL org.opencontainers.image.source https://github.com/aknochow/minee/cs9/Containerfile
 
 # dnf basics
 USER root
