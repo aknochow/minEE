@@ -1,4 +1,4 @@
-# minEE (minimal Exectuion Environment)
+# minEE (minimal Execution Environment)
 # Red Hat 9 flavor
 ARG EE_BASE_IMAGE=registry.access.redhat.com/ubi9-minimal
 FROM $EE_BASE_IMAGE
