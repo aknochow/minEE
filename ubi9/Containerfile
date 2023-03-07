@@ -23,7 +23,7 @@ RUN git config --system --add safe.directory /
 # Python
 RUN python3 -m ensurepip && python3 -m pip install --upgrade pip
 RUN python3 -m pip install --progress-bar=off --compile --only-binary :all: \
-ansible-lint \
+ansible-core \
 ansible-runner \
 jmespath \
 paramiko \
@@ -49,7 +49,6 @@ RUN chmod g+rw /etc/{group,passwd}
 # add some helpful CLI commands to check we do not remove them inadvertently and output some helpful version information at build time.
 RUN set -ex \
 && ansible --version \
-&& ansible-lint --version \
 && ansible-runner --version \
 && python --version \
 && git --version \
