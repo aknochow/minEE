@@ -5,18 +5,21 @@ minEE is a lightweight runner image intended to be used as an Ansible AWX Execut
 Minimal redhat base os images (ubi, centos, fedora) provide a small footprint and use microdnf for package management.
 
 ## Flavors:
-#### cs9 - CentOS Stream 9 (default/latest)
-#### ubi9 - Red Hat 9.1
+#### cs9 - CentOS Stream 9 (default/latest) 
+`ansible python version: 3.9.16 (/usr/bin/python3)`
+#### ubi9 - Red Hat 9.1 
+`ansible python version: 3.9.14 (/usr/bin/python3)`
 #### f37 - Fedora 37
+`ansible python version: 3.11.2 (/usr/bin/python3)`
 
 ## Image details
 ### x86_64
 ```
-REPOSITORY                                TAG               IMAGE ID       CREATED          SIZE
-quay.io/aknochow/minee                    latest            e125726f6027   34 minutes ago   273 MB
-quay.io/aknochow/minee                    cs9               e125726f6027   34 minutes ago   273 MB
-quay.io/aknochow/minee                    f37               93e0bf1fd422   5 minutes ago    307 MB
-quay.io/aknochow/minee                    ubi9              df51e3ff2baa   31 minutes ago   270 MB
+REPOSITORY                                TAG               IMAGE ID       CREATED         SIZE
+quay.io/aknochow/minee                    latest            92bde12e6a7e   4 minutes ago   257 MB
+quay.io/aknochow/minee                    cs9               92bde12e6a7e   4 minutes ago   257 MB
+quay.io/aknochow/minee                    ubi9              7e64c5e4f1b3   3 minutes ago   250 MB
+quay.io/aknochow/minee                    f37               73c64f46ce17   2 minutes ago   286 MB
 (base images:)
 quay.io/centos/centos                     stream9-minimal   9494c5d6b8c6   5 days ago       99 MB
 registry.access.redhat.com/ubi9-minimal   latest            3135bd90aad6   11 days ago      97.5 MB
@@ -31,12 +34,11 @@ Red Hat Enterprise Linux release 9.1 (Plow)
 
 ### aarch64
 ```
-REPOSITORY                                TAG               IMAGE ID       CREATED          SIZE
-quay.io/aknochow/minee                    arm               72a3378ea0c3   51 minutes ago   282 MB
-quay.io/aknochow/minee                    cs9-arm           72a3378ea0c3   51 minutes ago   282 MB
-quay.io/aknochow/minee                    ubi9-arm          6dd3544bbfc0   45 minutes ago   279 MB
-quay.io/aknochow/minee                    f37-arm           cf0440af4daf   43 minutes ago   320 MB
-quay.io/aknochow/minee                    ubi9-arm          6dd3544bbfc0   45 minutes ago   279 MB
+REPOSITORY                                TAG               IMAGE ID       CREATED         SIZE
+quay.io/aknochow/minee                    arm               aa8c507d3678   4 minutes ago   270 MB
+quay.io/aknochow/minee                    cs9-arm           aa8c507d3678   4 minutes ago   270 MB
+quay.io/aknochow/minee                    ubi9-arm          562e3117b764   4 minutes ago   263 MB
+quay.io/aknochow/minee                    f37-arm           3e5a0418f5fa   3 minutes ago   303 MB
 (base images:)
 quay.io/centos/centos                     stream9-minimal   82d704893174   5 days ago       103 MB
 registry.access.redhat.com/ubi9-minimal   latest            74a2930150ef   11 days ago      101 MB
