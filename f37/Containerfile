@@ -48,12 +48,10 @@ RUN chmod g+rw /etc/{group,passwd}
 
 # add some helpful CLI commands to check we do not remove them inadvertently and output some helpful version information at build time.
 RUN set -ex \
+&& rpm -qa \
 && ansible --version \
 && ansible-runner --version \
-&& python --version \
-&& git --version \
-&& rpm -qa \
-&& uname -a
+&& python --version
 
 # Set custom prompt according to user
 RUN echo "git_branch() { git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'; }" >> /etc/profile.d/prompt.sh
