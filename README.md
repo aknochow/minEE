@@ -16,14 +16,14 @@ Minimal redhat base os images (ubi, centos, fedora) provide a small footprint an
 ### x86_64
 ```
 REPOSITORY                               TAG              IMAGE ID       CREATED         SIZE
-quay.io/aknochow/minee                   latest           92bde12e6a7e   4 minutes ago   257 MB
-quay.io/aknochow/minee                   cs9              92bde12e6a7e   4 minutes ago   257 MB
-quay.io/aknochow/minee                   ubi9             7e64c5e4f1b3   3 minutes ago   250 MB
-quay.io/aknochow/minee                   f37              73c64f46ce17   2 minutes ago   286 MB
+quay.io/aknochow/minee                   latest           5e22dc870eca   3 minutes ago   253 MB
+quay.io/aknochow/minee                   cs9              5e22dc870eca   3 minutes ago   253 MB
+quay.io/aknochow/minee                   ubi9             64903c6093df   2 minutes ago   252 MB
+quay.io/aknochow/minee                   f37              5db5bdd6f862   1 minute ago    276 MB
 (base images:)
-quay.io/centos/centos                    stream9-minimal  9494c5d6b8c6   5 days ago      99 MB
-registry.access.redhat.com/ubi9-minimal  latest           3135bd90aad6   11 days ago     97.5 MB
-quay.io/fedora/fedora-minimal            37               7dc37554d8cb   11 days ago     101 MB
+quay.io/centos/centos                    stream9-minimal  cafebf3298db   6 days ago      99 MB
+registry.access.redhat.com/ubi9-minimal  latest           3135bd90aad6   3 weeks ago     97.5 MB
+quay.io/fedora/fedora-minimal            37               d1bf7eb4ec93   7 days ago      101 MB
 ```
 _Built with:_
 ```
