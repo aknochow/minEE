@@ -60,7 +60,7 @@ RUN echo 'if [ ${EUID} == 0 ]; then export PS1="\n \[\e[1m\]\[\033[01;31m\]\u\[\
 RUN echo 'printf "\n\e[01;31m$(cat /etc/redhat-release)\e[00;00m\n"' >> /etc/profile.d/prompt.sh
 
 # Set built on date
-RUN echo 'printf "minEE (built on '$(date)')\n"' > /etc/profile.d/prompt_built_on.sh
+RUN echo 'printf "minEE (ubi9) (built on '$(date)')\n"' > /etc/profile.d/prompt_built_on.sh
 
 # Play alias. Saving keyboards since 2014*
 RUN ln -s $(which ansible-playbook) /usr/local/bin/play
