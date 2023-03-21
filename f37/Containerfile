@@ -59,6 +59,9 @@ RUN echo 'if [ ${EUID} != 0 ]; then export PS1="\n \[\e[1m\]\[\033[01;37m\]\u\[\
 RUN echo 'if [ ${EUID} == 0 ]; then export PS1="\n \[\e[1m\]\[\033[01;31m\]\u\[\033[34m\]@\h \[\033[31m\]\w \[\033[32m\]\$(git_branch)\[\033[00m\]\n $ " ; fi' >> /etc/profile.d/prompt.sh
 RUN echo 'printf "\n\e[01;34m$(cat /etc/redhat-release)\e[00;00m\n"' >> /etc/profile.d/prompt.sh
 
+# Set Build Date
+RUN echo "printf 'minEE Build Date: $(date)\n'" > /etc/profile.d/prompt_build_date.sh
+
 # Play alias. Saving keyboards since 2014*
 RUN ln -s $(which ansible-playbook) /usr/local/bin/play
 
