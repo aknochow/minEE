@@ -1,3 +1,4 @@
+# Testing Comment (remove later)
 # minEE (minimal Execution Environment)
 # CentOS Stream 9 flavor (cs9)
 ARG EE_BASE_IMAGE=quay.io/centos/centos:stream9-minimal
