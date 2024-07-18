@@ -1,10 +1,10 @@
 # minEE (minimal Execution Environment)
-# Fedora 37 flavor (f37)
-ARG EE_BASE_IMAGE=quay.io/fedora/fedora-minimal:37
+# Fedora 40 flavor (f40)
+ARG EE_BASE_IMAGE=quay.io/fedora/fedora-minimal:40
 FROM $EE_BASE_IMAGE
 
 # https://github.com/opencontainers/image-spec/blob/main/annotations.md
-LABEL org.opencontainers.image.source https://github.com/aknochow/minEE/blob/main/f37/Containerfile
+LABEL org.opencontainers.image.source https://github.com/aknochow/minEE/blob/main/f40/Containerfile
 
 # dnf basics
 USER root
@@ -60,7 +60,7 @@ RUN echo 'if [ ${EUID} == 0 ]; then export PS1="\n \[\e[1m\]\[\033[01;31m\]\u\[\
 RUN echo 'printf "\n\e[01;34m$(cat /etc/redhat-release)\e[00;00m\n"' >> /etc/profile.d/prompt.sh
 
 # Set built on date
-RUN echo 'printf "minEE (f37) (built on '$(date)')\n"' > /etc/profile.d/prompt_built_on.sh
+RUN echo 'printf "minEE (f40) (built on '$(date)')\n"' > /etc/profile.d/prompt_built_on.sh
 
 # Play alias. Saving keyboards since 2014*
 RUN ln -s $(which ansible-playbook) /usr/local/bin/play
